@@ -8,14 +8,14 @@ Created on Mon Oct 26 15:05:21 2020
 import numpy as np
 import pandas as pd
 '''
-data = pd.read_excel("C:\\Users\\Albert\\Desktop\\WORK\\华润\\10.26\\1024各项目编制\\北京橡树湾.xlsx",encoding = 'gbk')
+data = pd.read_excel("1.xlsx",encoding = 'gbk')
 
-list =['润西山','理想国','悦景湾','万橡悦府','小米','北京橡树湾','下花园','密云橡树湾','海淀北','海淀南']
+list =[]#添加你的项目名称
 df=np.zeros((len(list),data.shape[1]))
 #命名Dataframe最好不要大写
 kk = pd.DataFrame(df)
 
-name = "C:\\Users\\Albert\\Desktop\\WORK\\华润\\10.26\\1024各项目编制\\"
+name = "C:\\Users\\Albert\\Desktop\\WORK\\"
 j=0
 for i in list:
   data=pd.read_excel(name+i+".xlsx",encoding='gbk')
@@ -63,13 +63,13 @@ print(find('住宅'))
 sum = (0,0,0,0,0)   
 for i in range(6):
   t=i+43
-  z ="北京润西山-4期|北京润西山4期"+str(t)+"#"
+  z ="1"+str(t)+"#"
 
   print(find(z))
 
 for i in range(21):
   t = i+22
-  z="-3期|开发-住宅-别墅叠拼-普通-毛坯"+str(t)
+  z="3"+str(t)
   
   print(find(z))
 '''
